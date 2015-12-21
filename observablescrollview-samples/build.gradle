@@ -1,16 +1,16 @@
 buildscript {
     repositories {
-        mavenCentral()
+       jcenter()
     }
     dependencies {
-        classpath 'com.android.tools.build:gradle:1.0.0'
+        classpath 'com.android.tools.build:gradle:0.14.2'
     }
 }
 
 apply plugin: 'com.android.application'
 
 repositories {
-    mavenCentral()
+  jcenter()
 
     // for using SNAPSHOT
     //maven {
@@ -35,7 +35,7 @@ project.ext.versionInfo.releaseVersionName = SYNCED_VERSION_NAME
 
 android {
     compileSdkVersion 21
-    buildToolsVersion "21.1.1"
+    buildToolsVersion "21.1.2"
 
     defaultConfig {
         applicationId "com.github.ksoichiro.android.observablescrollview.samples"
